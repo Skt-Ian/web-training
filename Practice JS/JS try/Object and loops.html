@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<p id="person"></p>
+
+  <script>
+    /*
+      //first option in loops
+    let person = {
+      name: 'Ian',
+      age: 18,
+      gender: 'Male'
+    }
+  
+
+    Object.keys(person).forEach(key => {
+      console.log(`${key}` , person[key])
+    })
+*/
+//second option
+let person = {
+      name: 'Ian',
+      gender: 'Male',
+      age: 18,
+    }
+ for(let i = 0; i <Object.keys(person).length; i++ ){
+  document.querySelector("#person").innerHTML =(person[Object.keys(person)[i]])
+ }
+  </script>
+</body>
+</html>

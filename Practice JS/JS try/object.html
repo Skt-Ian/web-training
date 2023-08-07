@@ -1,0 +1,64 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+
+    <p id="person"></p>
+
+
+    <script>
+
+
+      let personal = {
+        firstName: 'Ian',
+        lastNAme: 'Agapay',
+        age: 18
+      }
+
+      console.log(personal)
+      console.log(personal.firstName)
+      console.log(personal.lastNAme)
+      console.log(personal.age)
+
+      //object function assign
+      Object.assign(personal, { gender: 'Male' })
+      Object.assign(personal, { age: 19 }, { age: 20 })
+      Object.assign(personal, { BloodType: 'o' })
+      console.log(personal)
+      console.log(personal.gender)
+
+      //object function value yung value lang ang pinapakita
+      console.log('Values', Object.values(personal))
+
+      //object function keys ay kinuha ang laht ng nasa loob ng  object yung property
+      console.log('keys', Object.keys(personal))
+
+      //object function entries ito ay pinapakita lahat ng nsa loob ng object
+      console.log('Entries', Object.entries(personal))
+
+      //spread operator
+      let personA = {
+        name: 'Ian',
+        age: 18
+      }
+     console.log('Spread Operator') 
+      let personB = {...personA, Average: 95}
+    console.log(personB)
+    console.log(personB.Average)
+
+  //sample code in spread operator
+  let name= {name: 'Ian'}
+  let age ={age: 18}
+ let personalData = {...name,...age} 
+
+ console.log(personalData)
+    </script>
+  </body>
+
+  </html>

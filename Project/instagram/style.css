@@ -1,0 +1,185 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    main-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: serif;
+}
+
+form{
+align-items: center;
+justify-content: center;
+}
+
+.phone-logo{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.phone{
+flex: 1;
+    width: 450px;
+    position: absolute;
+    left: 510px;
+    top: 200px;
+}
+
+
+
+.container{
+    text-align: center;
+    float:right;
+    border: 1px solid #ccc;
+    width: 310px;
+    position: absolute;
+    top: 250px;
+}
+
+form h3{
+    padding: 5px 10px;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-family: 'Pacifico', cursive;
+
+}
+
+
+
+form input{
+    margin-bottom: 15px;
+    border: 1px solid rgba(0,0,0,7);
+    border-radius: 5px;
+    outline: none;
+}
+
+
+form input:fucos{
+    border: 1px solid rgba(0,0,0,7);
+    background: #efefef;
+}
+
+input[type="text"],
+input[type="password"]{
+    width: 290px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+input::placeholder{
+    font-weight: normal;
+    font-size: 14px;
+}
+
+form button{
+    border: none;
+    background-color: lightskyblue;
+    color: white;
+    height: 35px;
+    width: 300px;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+form button:hover{
+    background-color: blue;
+}
+
+form button:active{
+    background-color: blue;
+}
+
+.option{
+    color: #5a5a5a;
+    font-weight: bold;
+    padding-top: 13px;
+}
+
+.option::before{
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 3px;
+    background: #b6b6b6;
+left: 30px;
+top:275px;
+}
+
+.option::after{
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 3px;
+    background: #b6b6b6;
+right: 30px;
+top:275px;
+}
+
+
+.fblinks{
+    margin-top: 15px;
+    width: 100%;
+    text-decoration: none;
+    font-weight: bold;
+    color: #021897;
+    font-size: 15px;
+}
+
+.fa-square-facebook{
+    font-size: 15px;
+    color: #021897;
+    font-weight: bold;
+
+}
+
+.forget{
+    margin-top: 30px;
+    text-decoration: none;
+    color: #025fd2;
+    font-size: 15px;
+    font-weight: 30px;
+}
+
+.signup{
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 310px;
+    position: absolute;
+    top: 390px;
+}
+
+
+@media(min-width: 780;){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        text-align: center;
+        float:right;
+        border: none;
+        width: 310px;
+        position: absolute;
+        top: 250px;
+    }
+    .signup{
+        text-align: center;
+        border: none;
+       
+    }
+
+    
+}
+
+
+
+

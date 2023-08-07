@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>function</title>
+</head>
+<body>
+    <script>
+      function function1() {
+        console.log('hello');
+        console.log(3 + 3);
+      }
+
+      function1();
+      function1();
+
+      //learn about parameter in a function
+      //we can put many more parameter 
+      //and we can add default value in parameter
+      function calculateTax(price, priceTax = 0.1){
+        console.log(price * priceTax);
+      }
+      
+      calculateTax(2000, 0.1);
+      calculateTax(7000);
+    </script>
+</body>
+</html>
